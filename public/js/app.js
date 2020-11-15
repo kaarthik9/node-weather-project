@@ -15,7 +15,6 @@ function getWeather() {
       msg1.textContent = data.error;
       msg2.textContent = '';
     } else {
-      console.log(data);
       msg1.innerHTML = '<b>Location</b>'
       msg2.textContent = data.forecast;
 
