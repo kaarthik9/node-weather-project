@@ -16,7 +16,7 @@ function getWeather() {
       msg2.textContent = '';
     } else {
       msg1.innerHTML = '<b>Location</b>'
-      msg2.textContent = data.forecast;
+      msg2.innerHTML ='<b>'+ data.forecast +'</b>'+ '. Observed at: ' + data.observationTime;
 
       input.value = '';
     }

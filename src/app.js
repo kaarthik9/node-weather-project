@@ -55,6 +55,7 @@ app.get('/weather', (req, res) => {
       return res.send({
         forecast: response.temperature + ' celcius',
         location,
+        observationTime: response.observation_time,
         feelsLike: response.feelslike
       });
     }
